@@ -1,0 +1,159 @@
+
+.header-section {
+  padding: 20px 0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: purple;
+}
+
+.header-fixed {
+  background-color: #fff; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.logo-menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: 1200px; 
+}
+
+.lab-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  
+}
+
+.lab-ul li {
+  margin-right: 20px;
+  
+}
+
+.lab-ul li:last-child {
+  margin-right: 0;
+  
+}
+
+.lab-ul a {
+  text-decoration: none;
+  color: #333; 
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  
+}
+
+.lab-ul a:hover {
+  color: #e44d26; 
+}
+
+/* Buttons */
+.lab-btn {
+  background-color: #e44d26;
+  color: #fff; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; 
+  
+}
+
+.lab-btn:hover {
+  background-color: #333; 
+}
+
+/* Menu Toggler */
+/* .header-bar {
+  cursor: pointer;
+  margin-left: 1200px; 
+} */
+
+.header-bar span {
+  display: block;
+  height: 2px;
+  width: 25px;
+  background-color: #333; 
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.header-bar.active span:nth-child(1),
+.header-bar.active span:nth-child(3) {
+  background-color: transparent;
+  
+}
+
+/* Social Toggle */
+.ellepsis-bar {
+  cursor: pointer;
+  color: white; 
+  font-size: 24px;
+  transition: color 0.3s ease;
+  margin-right: 10px; 
+  
+}
+
+.ellepsis-bar:hover {
+  color: #e44d26; 
+}
+
+/* Responsive Menu */
+@media (max-width: 991px) {
+  .logo-menu-wrapper {
+    flex-direction: column;
+  }
+
+  .lab-ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .lab-ul.active {
+    display: flex;
+  }
+
+  .lab-ul li {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .lab-ul a {
+    color: #333; 
+  }
+
+  .lab-btn {
+    margin-top: 20px;
+    width: 100%;
+    margin-right: 0; 
+  }
+
+  .header-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

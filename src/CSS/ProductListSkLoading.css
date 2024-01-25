@@ -1,0 +1,62 @@
+.product-list {
+    /* display flex ka matlab he ki item ya product ko ek line me arrange karna horizontally ya vertically according to space */
+    display: flex;
+    /* felx wrap ka matlab he ki yadi co uss line me wrap nahi hoti to vo dusari line me move kar jati he jese shelf me book jaa rahe he or booka jayad e to next line se chalu ho jygi fir */
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .product-card {
+    width: 300px;
+    margin: 16px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, cursor 0.3s ease;
+             /* property  duration  timingfunction  delay*/
+             /* according to function kese value change ho rahi he  */
+             /* eas timing function jo he vo slow se shuru hota he bich me tej hota he or lsst m fir dhire ho jata he vqt ke stah values badalti he  */
+    font-family: sans-serif;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .product-card .skeleton-image {
+    width: 50%;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product-card .skeleton-details {
+    text-align: left;
+  }
+  
+  .product-card .skeleton-title {
+    width: 80%;
+    height: 15px;
+    background-color: #ccc;
+    margin-bottom: 8px;
+  }
+  
+  .product-card .skeleton-description {
+    width: 90%;
+    height: 40px;
+    background-color: #ccc;
+    margin-bottom: 8px;
+  }
+  
+  .product-card .skeleton-price {
+    width: 40%;
+    height: 15px;
+    background-color: #ccc;
+  }
+  
